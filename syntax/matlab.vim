@@ -17,7 +17,7 @@ endif
 
 syn keyword matlabStatement		return function
 syn keyword matlabConditional		switch case else elseif end if otherwise break continue
-syn keyword matlabRepeat		do for while
+syn keyword matlabRepeat		do for while parfor spmd
 syn keyword matlabStorageClass		classdef methods properties events persistent global
 syn keyword matlabExceptions		try catch rethrow throw
 
@@ -256,7 +256,7 @@ syn keyword matlabFunc hold holes home horzcat hot hour hours hover hsv
 syn keyword matlabFunc hsv2rgb hypot i ichol idealfilter idivide if, elseif,
 syn keyword matlabFunc else ifft ifft2 ifftn ifftshift ilu im2double im2frame
 syn keyword matlabFunc im2java imag image imageDatastore imagesc imapprox
-syn keyword matlabFunc imfinfo imformats imgCompress import importdata imread
+syn keyword matlabFunc imfinfo imformats imgCompress importdata imread
 syn keyword matlabFunc imresize imshow imtile imwrite incenter incenters
 syn keyword matlabFunc incidence ind2rgb ind2sub indegree inedges Inf info
 syn keyword matlabFunc infoImpl initialize initializeDatastore inline inmem
@@ -344,7 +344,7 @@ syn keyword matlabFunc openFile opengl openProject openvar optimget optimset
 syn keyword matlabFunc or ordeig orderfields ordqz ordschur orient orth
 syn keyword matlabFunc outdegree outedges outerjoin outputImpl overlaps pack
 syn keyword matlabFunc pad padecoef pagesetupdlg pan panInteraction
-syn keyword matlabFunc parallelplot pareto parfor parquetDatastore parquetinfo
+syn keyword matlabFunc parallelplot pareto parquetDatastore parquetinfo
 syn keyword matlabFunc parquetread parquetwrite parse parseSoapResponse
 syn keyword matlabFunc partition parula pascal patch path path2rc pathsep
 syn keyword matlabFunc pathtool pause pbaspect pcg pchip pcode pcolor pdepe
@@ -447,13 +447,13 @@ syn keyword matlabFunc teardownTestClass teardownTestMethod tempdir tempname
 syn keyword matlabFunc testsuite tetramesh texlabel text textread textscan
 syn keyword matlabFunc textwrap tfqmr then thetalim thetatickformat
 syn keyword matlabFunc thetaticklabels thetaticks thingSpeakRead
-syn keyword matlabFunc thingSpeakWrite throw throwAsCaller throwExceptionWhen
-syn keyword matlabFunc tic time timeit timeofday timerange timerfind
-syn keyword matlabFunc timerfindall times timetable timetable2table timezones
-syn keyword matlabFunc title toc todatenum toeplitz toolboxdir topkrows
-syn keyword matlabFunc toposort trace transclosure transform translate
-syn keyword matlabFunc transpose transreduction trapz treelayout treeplot
-syn keyword matlabFunc triangulation tril trimesh triplequad triplot TriRep
+syn keyword matlabFunc thingSpeakWrite throwAsCaller throwExceptionWhen tic
+syn keyword matlabFunc time timeit timeofday timerange timerfind timerfindall
+syn keyword matlabFunc times timetable timetable2table timezones title toc
+syn keyword matlabFunc todatenum toeplitz toolboxdir topkrows toposort trace
+syn keyword matlabFunc transclosure transform translate transpose
+syn keyword matlabFunc transreduction trapz treelayout treeplot triangulation
+syn keyword matlabFunc tril trimesh triplequad triplot TriRep
 syn keyword matlabFunc TriScatteredInterp trisurf triu true try, catch
 syn keyword matlabFunc tsearchn turningdist type typecast tzoffset uialert
 syn keyword matlabFunc uiaxes uibutton uibuttongroup uicheckbox uiconfirm

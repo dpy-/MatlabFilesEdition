@@ -9,7 +9,7 @@ import urllib, json, textwrap, re
 skip = [ 'return', 'function', 'switch', 'case', 'else', 'elseif', 'end',
         'if', 'otherwise', 'break', 'continue', 'do', 'for', 'while',
         'classdef', 'methods', 'properties', 'events', 'persistent', 'global',
-        'try', 'catch', 'rethrow', 'throw', 'import' ]
+        'try', 'catch', 'rethrow', 'throw', 'import', 'parfor', 'spmd' ]
 
 # Also skip the function "contains" since that's a special word in Vim :syntax
 skip.append('contains')
