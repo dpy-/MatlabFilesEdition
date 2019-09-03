@@ -58,7 +58,6 @@ syn match matlabSemicolon		";"
 syn match matlabComment			"%.*$"	contains=matlabTodo,matlabTab
 syn region matlabBlockComment        start=+%{+    end=+%}+ contains=matlabBlockComment
 
-
 " Auto-generated function list (see load_function_list.py)
 syn keyword matlabFunc abs accumarray acos acosd acosh acot acotd acoth acsc
 syn keyword matlabFunc acscd acsch actxcontrol actxcontrollist
@@ -170,7 +169,7 @@ syn keyword matlabFunc drawnow dsearchn duration echo echodemo edgeAttachments
 syn keyword matlabFunc edgecount edges edit eig eigs ellipj ellipke ellipsoid
 syn keyword matlabFunc empty enableDefaultInteractivity
 syn keyword matlabFunc enableNETfromNetworkDrive enableservice EndInvoke
-syn keyword matlabFunc endsWith enumeration eomday eps eq equilibrate erase
+syn keyword matlabFunc endsWith enumeration eomday eq equilibrate erase
 syn keyword matlabFunc eraseBetween erf erfc erfcinv erfcx erfinv error
 syn keyword matlabFunc errorbar errordlg etime etree etreeplot eval evalc
 syn keyword matlabFunc evalin eventlisteners exceltime Execute exist exit exp
@@ -253,21 +252,21 @@ syn keyword matlabFunc helpdlg helpwin hess hex2dec hex2num hgexport hggroup
 syn keyword matlabFunc hgload hgsave hgtransform hidden highlight hilb hist
 syn keyword matlabFunc histc histcounts histcounts2 histogram histogram2 hms
 syn keyword matlabFunc hold holes home horzcat hot hour hours hover hsv
-syn keyword matlabFunc hsv2rgb hypot i ichol idealfilter idivide if, elseif,
-syn keyword matlabFunc else ifft ifft2 ifftn ifftshift ilu im2double im2frame
-syn keyword matlabFunc im2java imag image imageDatastore imagesc imapprox
-syn keyword matlabFunc imfinfo imformats imgCompress importdata imread
-syn keyword matlabFunc imresize imshow imtile imwrite incenter incenters
-syn keyword matlabFunc incidence ind2rgb ind2sub indegree inedges Inf info
-syn keyword matlabFunc infoImpl initialize initializeDatastore inline inmem
-syn keyword matlabFunc inner2outer innerjoin inOutStatus inpolygon input
-syn keyword matlabFunc inputdlg inputname insertAfter insertATbl insertBefore
-syn keyword matlabFunc insertBTbl insertCol insertImg insertRows inShape
-syn keyword matlabFunc inspect instrcallback instrfind instrfindall int16
-syn keyword matlabFunc int2str int32 int64 int8 integral integral2 integral3
-syn keyword matlabFunc interp1 interp1q interp2 interp3 interpft interpn
+syn keyword matlabFunc hsv2rgb hypot i ichol idealfilter idivide ifft ifft2
+syn keyword matlabFunc ifftn ifftshift ilu im2double im2frame im2java imag
+syn keyword matlabFunc image imageDatastore imagesc imapprox imfinfo imformats
+syn keyword matlabFunc imgCompress importdata imread imresize imshow imtile
+syn keyword matlabFunc imwrite incenter incenters incidence ind2rgb ind2sub
+syn keyword matlabFunc indegree inedges info infoImpl initialize
+syn keyword matlabFunc initializeDatastore inline inmem inner2outer innerjoin
+syn keyword matlabFunc inOutStatus inpolygon input inputdlg inputname
+syn keyword matlabFunc insertAfter insertATbl insertBefore insertBTbl
+syn keyword matlabFunc insertCol insertImg insertRows inShape inspect
+syn keyword matlabFunc instrcallback instrfind instrfindall int16 int2str
+syn keyword matlabFunc int32 int64 int8 integral integral2 integral3 interp1
+syn keyword matlabFunc interp1q interp2 interp3 interpft interpn
 syn keyword matlabFunc interpstreamspeed intersect intmax intmin inv invhilb
-syn keyword matlabFunc invoke ipermute iqr is* isa isappdata isaUnderlying
+syn keyword matlabFunc invoke ipermute iqr isa isappdata isaUnderlying
 syn keyword matlabFunc isbanded isbetween iscalendarduration iscategorical
 syn keyword matlabFunc iscategory iscell iscellstr ischange ischar iscolumn
 syn keyword matlabFunc iscom isCompatible isCompressedImg isConnected isdag
@@ -306,12 +305,11 @@ syn keyword matlabFunc lightangle lighting lin2mu line lines LineSpec linkaxes
 syn keyword matlabFunc linkdata linkprop linsolve linspace listdlg listener
 syn keyword matlabFunc listfonts listModifiedFiles listRequiredFiles load
 syn keyword matlabFunc loadlibrary loadobj loadObjectImpl localfunctions log
-syn keyword matlabFunc log10 log1p log2 logical Logical Operators: Short-
-syn keyword matlabFunc circuit loglog logm logspace lookfor lower ls lscov
-syn keyword matlabFunc lsqminnorm lsqnonneg lsqr lt lu magic makehgtform
-syn keyword matlabFunc mapreduce mapreducer mat2cell mat2str matchpairs
-syn keyword matlabFunc material matfile matlabrc matlabroot max maxflow
-syn keyword matlabFunc MaximizeCommandWindow maxk maxNumCompThreads
+syn keyword matlabFunc log10 log1p log2 logical loglog logm logspace lookfor
+syn keyword matlabFunc lower ls lscov lsqminnorm lsqnonneg lsqr lt lu magic
+syn keyword matlabFunc makehgtform mapreduce mapreducer mat2cell mat2str
+syn keyword matlabFunc matchpairs material matfile matlabrc matlabroot max
+syn keyword matlabFunc maxflow MaximizeCommandWindow maxk maxNumCompThreads
 syn keyword matlabFunc maxpartitions mean median memmapfile memoize memory
 syn keyword matlabFunc menu mergecats mergevars mesh meshc meshgrid meshz
 syn keyword matlabFunc metaclass methodsview mex mexext mexhost mfilename mget
@@ -328,7 +326,7 @@ syn keyword matlabFunc mustBeLessThanOrEqual mustBeMember mustBeNegative
 syn keyword matlabFunc mustBeNonempty mustBeNonNan mustBeNonnegative
 syn keyword matlabFunc mustBeNonpositive mustBeNonsparse mustBeNonzero
 syn keyword matlabFunc mustBeNumeric mustBeNumericOrLogical mustBePositive
-syn keyword matlabFunc mustBeReal namelengthmax NaN nargchk nargin narginchk
+syn keyword matlabFunc mustBeReal namelengthmax nargchk nargin narginchk
 syn keyword matlabFunc nargout nargoutchk NaT native2unicode nccreate ncdisp
 syn keyword matlabFunc nchoosek ncinfo ncread ncreadatt ncwrite ncwriteatt
 syn keyword matlabFunc ncwriteschema ndgrid ndims ne nearest nearestNeighbor
@@ -348,15 +346,15 @@ syn keyword matlabFunc parallelplot pareto parquetDatastore parquetinfo
 syn keyword matlabFunc parquetread parquetwrite parse parseSoapResponse
 syn keyword matlabFunc partition parula pascal patch path path2rc pathsep
 syn keyword matlabFunc pathtool pause pbaspect pcg pchip pcode pcolor pdepe
-syn keyword matlabFunc pdeval peaks perimeter perl perms permute pi pie pie3
-syn keyword matlabFunc pink pinv planerot play playblocking plot plot3
-syn keyword matlabFunc plotbrowser plotedit plotmatrix plottools plotyy plus
-syn keyword matlabFunc pointLocation pol2cart polar polaraxes polarhistogram
-syn keyword matlabFunc polarplot polarscatter poly polyarea polybuffer polyder
-syn keyword matlabFunc polyeig polyfit polyint polyshape polyval polyvalm
-syn keyword matlabFunc posixtime pow2 power ppval predecessors prefdir
-syn keyword matlabFunc preferences preferredBufferSize press preview primes
-syn keyword matlabFunc print printdlg printopt printpreview prism
+syn keyword matlabFunc pdeval peaks perimeter perl perms permute pie pie3 pink
+syn keyword matlabFunc pinv planerot play playblocking plot plot3 plotbrowser
+syn keyword matlabFunc plotedit plotmatrix plottools plotyy plus pointLocation
+syn keyword matlabFunc pol2cart polar polaraxes polarhistogram polarplot
+syn keyword matlabFunc polarscatter poly polyarea polybuffer polyder polyeig
+syn keyword matlabFunc polyfit polyint polyshape polyval polyvalm posixtime
+syn keyword matlabFunc pow2 power ppval predecessors prefdir preferences
+syn keyword matlabFunc preferredBufferSize press preview primes print printdlg
+syn keyword matlabFunc printopt printpreview prism
 syn keyword matlabFunc processInputSpecificationChangeImpl
 syn keyword matlabFunc processTunedPropertiesImpl prod profile profsave
 syn keyword matlabFunc progress propagatedInputComplexity
@@ -438,25 +436,24 @@ syn keyword matlabFunc subvolume successors sum summary summer superclasses
 syn keyword matlabFunc support supportPackageInstaller supports
 syn keyword matlabFunc supportsMultipleInstanceImpl surf surf2patch surface
 syn keyword matlabFunc surfaceArea surfc surfl surfnorm svd svds swapbytes
-syn keyword matlabFunc switch, case, otherwise sylvester symamd symbfact
-syn keyword matlabFunc symmlq symrcm symvar synchronize syntax system table
-syn keyword matlabFunc table2array table2cell table2struct table2timetable
-syn keyword matlabFunc tabularTextDatastore tail tall tallrng tan tand tanh
-syn keyword matlabFunc tar tcpclient teardown teardownSharedTestFixture
-syn keyword matlabFunc teardownTestClass teardownTestMethod tempdir tempname
-syn keyword matlabFunc testsuite tetramesh texlabel text textread textscan
-syn keyword matlabFunc textwrap tfqmr then thetalim thetatickformat
-syn keyword matlabFunc thetaticklabels thetaticks thingSpeakRead
-syn keyword matlabFunc thingSpeakWrite throwAsCaller throwExceptionWhen tic
-syn keyword matlabFunc time timeit timeofday timerange timerfind timerfindall
-syn keyword matlabFunc times timetable timetable2table timezones title toc
-syn keyword matlabFunc todatenum toeplitz toolboxdir topkrows toposort trace
-syn keyword matlabFunc transclosure transform translate transpose
-syn keyword matlabFunc transreduction trapz treelayout treeplot triangulation
-syn keyword matlabFunc tril trimesh triplequad triplot TriRep
-syn keyword matlabFunc TriScatteredInterp trisurf triu true try, catch
-syn keyword matlabFunc tsearchn turningdist type typecast tzoffset uialert
-syn keyword matlabFunc uiaxes uibutton uibuttongroup uicheckbox uiconfirm
+syn keyword matlabFunc sylvester symamd symbfact symmlq symrcm symvar
+syn keyword matlabFunc synchronize syntax system table table2array table2cell
+syn keyword matlabFunc table2struct table2timetable tabularTextDatastore tail
+syn keyword matlabFunc tall tallrng tan tand tanh tar tcpclient teardown
+syn keyword matlabFunc teardownSharedTestFixture teardownTestClass
+syn keyword matlabFunc teardownTestMethod tempdir tempname testsuite tetramesh
+syn keyword matlabFunc texlabel text textread textscan textwrap tfqmr then
+syn keyword matlabFunc thetalim thetatickformat thetaticklabels thetaticks
+syn keyword matlabFunc thingSpeakRead thingSpeakWrite throwAsCaller
+syn keyword matlabFunc throwExceptionWhen tic time timeit timeofday timerange
+syn keyword matlabFunc timerfind timerfindall times timetable timetable2table
+syn keyword matlabFunc timezones title toc todatenum toeplitz toolboxdir
+syn keyword matlabFunc topkrows toposort trace transclosure transform
+syn keyword matlabFunc translate transpose transreduction trapz treelayout
+syn keyword matlabFunc treeplot triangulation tril trimesh triplequad triplot
+syn keyword matlabFunc TriRep TriScatteredInterp trisurf triu true tsearchn
+syn keyword matlabFunc turningdist type typecast tzoffset uialert uiaxes
+syn keyword matlabFunc uibutton uibuttongroup uicheckbox uiconfirm
 syn keyword matlabFunc uicontextmenu uicontrol uidatepicker uidropdown
 syn keyword matlabFunc uieditfield uifigure uigauge uigetdir uigetfile
 syn keyword matlabFunc uigetpref uigridlayout uiimage uiimport uiknob uilabel

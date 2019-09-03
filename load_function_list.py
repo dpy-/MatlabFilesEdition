@@ -11,13 +11,19 @@ skip = [ 'return', 'function', 'switch', 'case', 'else', 'elseif', 'end',
         'classdef', 'methods', 'properties', 'events', 'persistent', 'global',
         'try', 'catch', 'rethrow', 'throw', 'import', 'parfor', 'spmd' ]
 
+# Skip things matched as constants
+skip += [ 'eps', 'Inf', 'NaN', 'pi' ]
+
 # Also skip the function "contains" since that's a special word in Vim :syntax
 skip.append('contains')
 
 def valid_item(item):
-    if item['type'] not in [ "METHOD", "FUNCTION" ]: return False
-    if "." in item['name']:                          return False
-    if item['name'] in skip:                         return False
+    # Methods and functions only
+    if item['type'] not in [ "METHOD", "FUNCTION" ]:   return False
+    # No special characters, except something in parentheses
+    if not re.match(r'^\w+( \(.*\))?$', item['name']): return False
+    # Nothing in the skip list
+    if item['name'] in skip:                           return False
     return True
 
 url = 'https://www.mathworks.com/help/search/reflist/doccenter/en/?type=function&listtype=alpha&product=matlab'
